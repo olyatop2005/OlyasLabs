@@ -6,4 +6,4 @@ for number in numbers:
         numbers_copy.append(number)
 numbers[numbers.index(None)] = sum(numbers_copy) / len(numbers)
 
-print("Измененный список: ", *numbers)
+print("Измененный список:", numbers)
