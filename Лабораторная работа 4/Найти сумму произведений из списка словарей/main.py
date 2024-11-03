@@ -1,8 +1,4 @@
-# TODO решите задачу
-
 def task() -> float:
-    a = 0
-    sch = 0
     sum_ = 0
     ch1 = 0
     ch2 = 0
