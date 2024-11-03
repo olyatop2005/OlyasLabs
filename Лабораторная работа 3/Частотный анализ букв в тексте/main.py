@@ -1,14 +1,20 @@
-def count_letters(text):
+def calculate_frequency(letters):
     total_count = 0
+    for _, value in letters.items():
+        total_count += value
+
+    for key, value in letters.items():
+        letters[key] = round(value / total_count, 2)
+
+    return letters
+
+
+def count_letters(text):
     letters = dict()
     for symb in text:
         if symb.isalpha():
             symb = symb.lower()
             letters[symb] = letters.get(symb, 0) + 1
-            total_count += 1
-
-    for key, value in letters.items():
-        letters[key] = round(value / total_count, 2)
 
     return letters
 
@@ -49,6 +55,6 @@ main_str = """
 Свои мне сказки говорил.
 """
 
-ans = count_letters(main_str)
+ans = calculate_frequency(count_letters(main_str))
 for key, value in ans.items():
     print(f"{key}: {value:.2f}")
