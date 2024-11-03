@@ -3,4 +3,4 @@ venv
 *.txt
 __init__.py
 *.yaml
-.md
+*.md
