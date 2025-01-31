@@ -4,3 +4,4 @@ venv
 __init__.py
 *.yaml
 *.md
+test_task.py
