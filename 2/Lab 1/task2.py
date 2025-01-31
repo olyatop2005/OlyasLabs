@@ -1,4 +1,4 @@
-from task_1 import Cat, Student, Teacher
+from task1 import Cat, Student, Teacher
 
 if __name__ == "__main__":
     student = Student("Bogdan", 8)
